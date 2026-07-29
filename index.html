@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>romeonfallagbe — Roméo N'soyénou Faïdé ALLAGBE</title>
+    <style>
+        :root {
+            --accent: #a16207;
+            --accent2: #d97706;
+            --bg: #faf6f0;
+            --text: #3f2d0a;
+            --card: #fffaf3;
+            --border: #a1620722
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box
+        }
+
+        body {
+            font-family: 'Lora', Georgia, serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 24px
+        }
+
+        .hero {
+            background: transparent;
+            border-radius: var(--radius);
+            padding: 24px 0;
+            text-align: center;
+            margin-bottom: 24px;
+            box-shadow: none;
+            border-bottom: 1px solid var(--border)
+        }
+
+        .hero-inner {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap
+        }
+
+        .avatar {
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            background: var(--accent);
+            color: #fff;
+            font-size: 2.4rem;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, .15);
+            overflow: hidden
+        }
+
+        .avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover
+        }
+
+        .hero-name {
+            font-family: 'Lora', Georgia, serif;
+            font-size: 2rem;
+            font-weight: 600
+        }
+
+        .hero-title {
+            color: var(--accent);
+            font-size: 1.1rem;
+            margin-top: 4px
+        }
+
+        .hero-contact {
+            font-size: .9rem;
+            color: #64748b;
+            margin-top: 8px
+        }
+
+        .hero-summary {
+            font-size: .95rem;
+            margin-top: 12px;
+            opacity: .92;
+            line-height: 1.6
+        }
+
+        .contact-row {
+            display: none
+        }
+
+        .hero-contact--plain {
+            display: block
+        }
+
+        .section {
+            background: var(--card);
+            border-radius: 4px;
+            padding: 24px;
+            margin-bottom: 16px;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, .05)
+        }
+
+        .section h2 {
+            font-family: 'Lora', Georgia, serif;
+            font-size: 1.3rem;
+            color: var(--accent);
+            margin-bottom: 12px;
+            text-transform: uppercase;
+            letter-spacing: .05em;
+            font-weight: 600
+        }
+
+        .section h2 {
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 6px
+        }
+
+        .section h2 {
+            text-decoration: underline;
+            text-decoration-color: var(--accent);
+            text-underline-offset: 4px
+        }
+
+        .entry {
+            margin-bottom: 12px;
+            padding-bottom: 12px;
+            border-bottom: 1px solid #e2e8f0
+        }
+
+        .entry:last-child {
+            border-bottom: none
+        }
+
+        .entry-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline
+        }
+
+        .entry-title {
+            font-weight: 600;
+            font-size: 1.05rem
+        }
+
+        .entry-period {
+            font-size: .85rem;
+            color: #64748b
+        }
+
+        .entry-org {
+            display: block;
+            color: var(--accent);
+            font-size: .9rem;
+            margin-top: 2px
+        }
+
+        .entry-desc {
+            font-size: .9rem;
+            margin-top: 6px;
+            line-height: 1.5
+        }
+
+        .entry-highlights {
+            list-style: none;
+            padding: 0;
+            margin: 6px 0 0 0
+        }
+
+        .entry-highlights li {
+            font-size: .9rem;
+            line-height: 1.5;
+            padding: 2px 0 2px 16px;
+            position: relative
+        }
+
+        .entry-highlights li::before {
+            content: '•';
+            position: absolute;
+            left: 0;
+            color: var(--accent);
+            font-weight: 700
+        }
+
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px
+        }
+
+        .skill-tag {
+            background: #a1620715;
+            border: 1px solid #a1620733;
+            border-radius: 6px;
+            padding: 4px 12px;
+            font-size: .85rem;
+            color: var(--accent)
+        }
+
+
+
+        @media(max-width:700px) {
+            .container {
+                padding: 12px
+            }
+
+            .hero {
+                padding: 20px
+            }
+
+            .hero-name {
+                font-size: 1.6rem
+            }
+
+            .avatar {
+                width: 72px;
+                height: 72px;
+                font-size: 2rem
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <section class="hero">
+            <div class="hero-inner">
+                <div class="avatar">R</div>
+                <div class="hero-text">
+                    <h1 class="hero-name">Roméo N'soyénou Faïdé ALLAGBE</h1>
+                    <p class="hero-title">Statisticien Machine Learning &amp; Analyse de Survie</p>
+                    <div class="contact-row"><a class="contact-link" href="mailto:faydehu@gmail.com"><span
+                                class="icon">&#9993;</span> faydehu@gmail.com</a><a class="contact-link"
+                            href="tel:+229 01 67 22 18 24"><span class="icon">&#9742;</span> +229 01 67 22 18 24</a><a
+                            class="contact-link" href="#"><span class="icon">&#8853;</span> Cotonou, Bénin</a></div>
+                    <p class="hero-contact hero-contact--plain">faydehu@gmail.com · +229 01 67 22 18 24 · Cotonou, Bénin
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="section">
+            <h2>Profil</h2>
+            <p>Statisticien et mathématicien spécialisé en analyse de survie et apprentissage automatique sur graphes.
+                Travaux de recherche axés sur la comparaison critique entre le modèle de Cox risques proportionnels et
+                les architectures de réseaux de neurones sur graphes (GraphSAGE) pour la prédiction de mortalité en
+                oncologie. Rigoureux et pédagogue, fort de dix ans d’expérience dans l’enseignement des mathématiques,
+                avec une capacité avérée transmettre des concepts complexes. la recherche d’une opportunité de doctorat
+                pour approfondir les questions de abilité, de calibration et de robustesse des modŁles prédictifs en
+                intelligence arti cielle appliquée.</p>
+        </section>
+        <section class="section">
+            <h2>Formation académique</h2>
+            <div class="entry">
+                <div class="entry-header"><span class="entry-title">Master en Statistique Appliquée au
+                        Vivant</span><span class="entry-period">2023 – 2026</span></div><span class="entry-org">Chaire
+                    Internationale en Physique, Mathématiques et Applications (CIPMA), Université d’Abomey-Calavi (UAC),
+                    Bénin</span>
+            </div>
+            <div class="entry">
+                <div class="entry-header"><span class="entry-title">Licence en Mathématiques-Informatique</span><span
+                        class="entry-period">2013 – 2016</span></div><span class="entry-org">École Normale Supérieure
+                    (ENS), Natitingou, Bénin</span>
+            </div>
+        </section>
+        <section class="section">
+            <h2>Projets de recherche &amp; travaux appliqués</h2>
+            <div class="entry">
+                <div class="entry-header"><span class="entry-title">Analyse de suivie &amp; Machine Learning sur
+                        Graphes</span><span class="entry-period">2025-2026</span></div>
+                <p class="entry-desc">Oncologie</p>
+                <ul class="entry-highlights">
+                    <li>Implémentation d’une architecture GraphSAGE sous PyTorch Geometric pour la prédiction de
+                        mortalité</li>
+                    <li> Élaboration de graphes de similarité patients (k-NN, distance de Manhattan)</li>
+                    <li>Étude comparative avec le modèle de Cox (C-index, calibration, validation croisée)</li>
+                    <li>Analyse des limites théoriques du modèle de Cox (proportionnalité des risques, indépendance des
+                        observations)</li>
+                </ul>
+            </div>
+        </section>
+        <section class="section">
+            <h2>Expériences professionnelles</h2>
+            <div class="entry">
+                <div class="entry-header"><span class="entry-title">Enseignant de Mathématiques</span><span
+                        class="entry-period">2016-présent</span></div><span class="entry-org">Collèges et Lycées,
+                    Bénin</span>
+                <ul class="entry-highlights">
+                    <li>Conception et animation de cours de mathématiques dans l'enseignement secondaire général</li>
+                    <li>Développement de la rigueur analytique et mise en œuvre d'une pédagogie adaptée à la
+                        transmission de concepts complexes</li>
+                    <li>Préparation et accompagnement des élèves aux examens nationaux</li>
+                </ul>
+            </div>
+        </section>
+        <section class="section">
+            <h2>Compétences</h2>
+            <div class="skills-list skills-list--skills"><span class="skill-tag">Analyse de survie : Modèle de Cox,
+                    courbes de Kaplan-Meier, C-index, gestion de la censure</span><span class="skill-tag">Machine
+                    Learning : Graph Neural Networks (GraphSAGE, GCN), graphes de similarité (k-NN), validation
+                    croisée</span><span class="skill-tag">Langages &amp; Outils : Python (PyTorch Geometric,
+                    scikit-learn, pandas, NumPy), R, LaTeX, Jupyter Notebook, Git</span></div>
+        </section>
+        <section class="section">
+            <h2>Langues</h2>
+            <div class="skills-list skills-list--languages"><span class="skill-tag">Français (natif)</span><span
+                    class="skill-tag">Anglais (B1)</span><span class="skill-tag">Fon &amp; Aïzo (natif)</span></div>
+        </section>
+        <section class="section">
+            <h2>Références académiques</h2>
+            <div class="entry">
+                <div class="entry-header"><span class="entry-title">Dr. Raymond AFFOSSOGBE</span></div>
+                <p class="entry-desc">Enseignant-Chercheur, Université d’Abomey-Calavi / CIPMA-Chaire UNESCO
+                </p>
+                <ul class="entry-highlights">
+                    <li>E-mail : rafmoqui@yahoo.fr</li>
+                    <li>Tél : +229 01 96 87 74 13</li>
+                </ul>
+            </div>
+            <div class="entry">
+                <div class="entry-header"><span class="entry-title">Dr. Nestor BOKOSSA</span></div>
+                <p class="entry-desc">Enseignant-Chercheur, Université d’Abomey-Calavi / CIPMA-Chaire UNESCO</p>
+                <ul class="entry-highlights">
+                    <li>E-mail : princeo02@yahoo.fr</li>
+                    <li>Tél : +229 01 67 80 82 16</li>
+                </ul>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>
